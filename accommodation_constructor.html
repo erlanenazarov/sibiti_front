@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pingo</title>
+    <link rel="stylesheet" href="assets/css/selectize.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <div class="grid header group">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Туры</a></li>
+                <li><a href="#">Направления</a></li>
+                <li><a href="#">Размещение</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#"><img src="assets/images/search_icon.png" alt="search-icon"></a></li>
+            </ul>
+        </nav>
+
+        <a class="logo" href="#"><img src="assets/images/logotype.png" alt="logotype"></a>
+
+        <!--<div class="profile"></div>-->
+    </div>
+</header>
+
+<div class="constructor">
+    <div class="grid">
+
+        <div id="tabs">
+
+            <ul class="button_tabs">
+                <li><a href="#fragment-1">1. Жилье</a></li>
+                <li><a href="#fragment-2">2. Удобства</a></li>
+                <li><a href="#fragment-3">3. Фото жилья</a></li>
+                <li><a href="#fragment-4">4. Местонахождение</a></li>
+                <li><a href="#fragment-5">5. Цена и описание</a></li>
+                <li><a href="#fragment-6">6. Правила и сроки</a></li>
+                <li><a href="#fragment-7">7. Завершение</a></li>
+            </ul>
+
+            <div id="fragment-1" class="ui-tabs-panel">
+                <div class="introduction">
+                    <h2>Давайте подготовим ваше объявление.</h2>
+
+                    <div class="line"></div>
+
+                    <p>Sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque.
+                    </p>
+
+                    <button type="button" name="button" class="button">начать</button>
+
+                    <!--<label class="select">Select field label:<br>-->
+                    <!--<select name="select-name" id="select-beast">-->
+                    <!--<option selected="" disabled>Выберите пункт</option>-->
+                    <!--<option value="1">Пункт 1</option>-->
+                    <!--<option value="2">Пункт 2</option>-->
+                    <!--<optgroup label="Group1">-->
+                    <!--<option value="1">team 1</option>-->
+                    <!--<option value="2">team 2</option>-->
+                    <!--</optgroup>-->
+                    <!--<option value="3">Пункт 3</option>-->
+                    <!--</select>-->
+                    <!--</label>-->
+                </div>
+
+
+            </div>
+
+            <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide">
+                <div class="step step1">
+                    <h2>Давайте подготовим ваше объявление.</h2>
+
+                    <div class="line"></div>
+
+                    <form method="post" action="#">
+                        <label for="select1">Тип жилья<br>
+                            <select name="select-name" id="select1">
+                                <option selected="" disabled>Выберите пункт</option>
+                                <option value="1">Квартира</option>
+                                <option value="2">Юрта</option>
+                                <!--<optgroup label="Group1">-->
+                                    <!--<option value="1">team 1</option>-->
+                                    <!--<option value="2">team 2</option>-->
+                                <!--</optgroup>-->
+                                <option value="3">Дом</option>
+                            </select>
+                        </label>
+
+                        <label for="select2">Тип размещения<br>
+                            <select name="select-name" id="select2">
+                                <option selected="" disabled>Выберите пункт</option>
+                                <option value="1">Отдельная комната</option>
+                                <option value="2">Совместная комната</option>
+                                <!--<optgroup label="Group1">-->
+                                <!--<option value="1">team 1</option>-->
+                                <!--<option value="2">team 2</option>-->
+                                <!--</optgroup>-->
+                                <option value="3">Отдельная квартира</option>
+                            </select>
+                        </label>
+
+                        <div class="amount">
+                            <label for="number1">Количество гостей<br>
+                                <input type="number" value="1" size="5" maxlength="3" id="number1">
+                            </label>
+                            <div class="minus"><img src="assets/images/minus.png" alt="minus"></div>
+                            <div class="plus"><img src="assets/images/plus.png" alt="plus"></div>
+                        </div>
+
+                        <!--<div class="b_number">-->
+                            <!--<div class="minus"><img src="assets/images/minus.png" alt="minus"></div>-->
+                            <!--<label>-->
+                                <!--<input type="number" value="1" size="5" maxlength="3">-->
+                            <!--</label>-->
+                            <!--<div class="plus"><img src="assets/images/plus.png" alt="plus"></div>-->
+                        <!--</div>-->
+
+                        <button type="button" name="button"><img src="assets/images/prev.png" alt="prev"> назад</button>
+                        <button type="button" name="button">далее <img src="assets/images/next.png" alt="next"></button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide">
+                <p>ante. Mauris Vestibulum est. fames egestas quam, leo. amet tristique sit libero egestas. ultricies mi
+                    turpis senectus Pellentesque habitant eu ac morbi netus eget, Aenean malesuada vitae, semper.
+                    eleifend et feugiat vitae amet, placerat Donec et tortor ultricies tempor quam sit </p>
+            </div>
+
+            <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide">
+
+            </div>
+
+            <div id="fragment-5" class="ui-tabs-panel ui-tabs-hide">
+
+            </div>
+
+            <div id="fragment-6" class="ui-tabs-panel ui-tabs-hide">
+
+            </div>
+
+            <div id="fragment-7" class="ui-tabs-panel ui-tabs-hide">
+
+            </div>
+
+            <p>The end.</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <div class="grid content5">
+        <div class="clear group">
+            <form method="post" action="#">
+                <label>
+                    <input type="search" name="name" placeholder="Поиск">
+                </label>
+            </form>
+
+            <ul class="share">
+                <li class="facebook"><a class="social " href="#"></a></li>
+                <li class="instagram"><a class="social " href="#"></a></li>
+                <li class="vk"><a class="social " href="#"></a></li>
+            </ul>
+        </div>
+        <hr color="#242424">
+
+        <div class="about">
+            <div class="service">
+                <h3>УСЛУГИ</h3>
+
+                <p>Rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. </p>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+            </div>
+
+            <ul class="pingo">
+                <li><a href="#"><h3>Pingo!</h3></a></li>
+                <li><a href="#">Туры</a></li>
+                <li><a href="#">Направления</a></li>
+                <li><a href="#">Размещение</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <ul class="contacts">
+                <li><h3>контакты</h3></li>
+                <li>+996 550 055 577</li>
+                <li>info@pingo.kg</li>
+                <li>Кыргызстан, Бишкек, ул. Горького 58,<br>
+                    (Пересекает ул. Матросова)
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <div class="grid footer group">
+            <p>© 2016 pingo!</p>
+            <a href="#">Разработка проекта <img src="assets/images/sunrise.png" alt="sunrise"></a>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
+<!--<script  type="text/javascript" src="assets/js/jquery-ui-1.7.custom.min.js"></script>-->
+<!--<script  type="text/javascript" src="assets/js/selectize.js"></script>-->
+<script src="assets/js/script.js"></script>
+
+    <script type="text/javascript" >
+            $(document).ready(function() {
+                $('.minus').click(function () {
+//                    var $input = $(this).parent().find('.p_quantity');
+                    var count = parseInt($($input).attr('value')) - 1;
+                    count = count < 1 ? 1 : count;
+//                    $input.attr('value', count);
+
+//                    countTotal();
+
+                    return false;
+                });
+
+                $('.plus').click(function () {
+//                    var $input = $(this).parent().find('.p_quantity');
+                    $input.attr('value', parseInt($input.val()) + 1);
+
+//                    countTotal();
+
+                    return false;
+                });
+
+//                function countTotal() {
+//                    var sum = 0;
+//                    var i = 0;
+//                    while (i < $('.p_quantity').length) {
+//                        product = $('.p_quantity').eq(i);
+//                        sum += (product).attr('value') * $(product).attr('data-price');
+//                        i++;
+//                    }
+//
+//                    $('.b_price .overall_total').text(sum);
+//
+//                    console.log(sum)
+//
+//                }
+
+//                $('.p_delete').on('click', function() {
+//                    var element = $(this).closest('tr');
+//                    $(element).fadeOut("slow", function () {
+//                        $(element).remove();
+//                    });
+//
+//                    countTotal();
+//                });
+            });
+</script>
+
+<!--<script>-->
+<!--$('#select-beast').selectize({-->
+<!--create: true,-->
+<!--sortField: 'text'-->
+<!--});-->
+<!--</script>-->
+
+<!--<script type="text/javascript">-->
+<!--$(function() {-->
+
+<!--var $tabs = $('#tabs').tabs();-->
+
+<!--$(".ui-tabs-panel").each(function(i){-->
+
+<!--var totalSize = $(".ui-tabs-panel").size() - 1;-->
+
+<!--if (i != totalSize) {-->
+<!--next = i + 2;-->
+<!--$(this).append("<a href='#' class='next-tab mover' rel='" + next + "'>Next Page &#187;</a>");-->
+<!--}-->
+
+<!--if (i != 0) {-->
+<!--prev = i;-->
+<!--$(this).append("<a href='#' class='prev-tab mover' rel='" + prev + "'>&#171; Prev Page</a>");-->
+<!--}-->
+
+<!--});-->
+
+<!--$('.next-tab, .prev-tab').click(function() {-->
+<!--$tabs.tabs('select', $(this).attr("rel"));-->
+<!--return false;-->
+<!--});-->
+
+
+<!--});-->
+<!--</script>-->
+</body>
+</html>
