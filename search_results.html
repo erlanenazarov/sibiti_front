@@ -5,6 +5,7 @@
     <title>Pingo</title>
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
     <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -36,6 +37,7 @@
             <div class="filter-block-row">
                 <div class="filter-location">
                     <span>Местоположение</span>
+
                     <div class="filter-input text-field">
                         <input type="text" placeholder="Местоположение">
                         <span data-trigger="clear-input">X</span>
@@ -43,6 +45,7 @@
                 </div>
                 <div class="filter-check-in">
                     <span>Заезд</span>
+
                     <div class="filter-input date-field">
                         <input type="date" placeholder="Заезд">
                         <span data-trigger="clear-input">X</span>
@@ -50,6 +53,7 @@
                 </div>
                 <div class="filter-check-out">
                     <span>Выезд</span>
+
                     <div class="filter-input date-field">
                         <input type="date" placeholder="Заезд">
                         <span data-trigger="clear-input">X</span>
@@ -58,10 +62,118 @@
             </div>
             <div class="filter-block-row">
                 <span>Тип размещения</span>
+
                 <div class="filter-hotel-types">
                     <ul>
-                        <li>дом или квартира</li>
+                        <li class="active">дом или квартира</li>
+                        <li>отдельная комната</li>
+                        <li>общая комната</li>
+                        <li class="active">палатка</li>
                     </ul>
+                </div>
+            </div>
+            <div class="filter-block-row">
+                <span>Ценовой диапазон</span>
+
+                <div class="filter-price-range">
+                    <div id="slider-range"></div>
+                </div>
+                <div class="filter-price-options">
+                    <span id="min-price-amount">$10</span>
+                    <span id="max-price-amount">$1000+</span>
+                </div>
+            </div>
+            <div class="filter-block-row">
+                <input type="checkbox" id="broke" value=""/>
+                <checkboxtrigger></checkboxtrigger>
+                <i>Мгновенное бронирование</i><br />
+                <span>Объявления, которые вы можете забронировать, не дожидаясь одобрения от хозяина.</span>
+            </div>
+        </div>
+        <div class="extra-filters">
+            <div class="filter-block-title">Дополнительные параметры</div>
+            <div class="filter-extra-scroll">
+                <div class="filter-block-row">
+                    <span>Размер</span>
+                    <div class="sans-size-block">
+                        <select>
+                            <option selected>Спальни</option>
+                            <option>ырдыфвлоапывап</option>
+                            <option>Спаsgsadfgльни</option>
+                            <option>dfgsdfgsdfg</option>
+                            <option>31234erds</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                        </select>
+                        <select>
+                            <option selected>Спальни</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                        </select>
+                        <select>
+                            <option selected>Спальни</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                            <option>Спальни</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-block-row">
+                    <span>Удобства</span>
+                    <div class="checkboxes-row">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="wi-fi" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Wi-Fi</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="tv" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Телевизоры</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="kitchen" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Кухня</i>
+                        </div>
+                    </div>
+                    <div class="checkboxes-row-how-more">
+                        <span>Показать больше <img src="assets/images/show-more-arrow.png"/> </span>
+                    </div>
+                    <div class="checkboxes-row-more-info">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="bla" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Wi-Fi</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="bla1" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Wi-Fi</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="bla2" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Wi-Fi</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="bla3" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Wi-Fi</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="bla4" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Wi-Fi</i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,6 +242,48 @@
 
 
 <script src="assets/js/jquery-3.1.0.min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
 <script src="assets/js/script.js"></script>
+<script>
+    $(document).ready(function() {
+        var sliderTwo = $('#slider-range');
+
+        $(sliderTwo).slider({
+            range: true,
+            min: 10,
+            max: 1000,
+            values: [10, 100],
+            slide: function (event, ui) {
+                //$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                $('#min-price-amount').html('$' + ui.values[0]);
+                $('#max-price-amount').html('$' + ui.values[1]);
+            }
+        });
+
+
+        $('#min-price-amount').html('$' + $(sliderTwo).slider( "values", 0 ));
+        $('#max-price-amount').html('$' + $(sliderTwo).slider( "values", 1 ));
+
+        var checkboxes = $('checkboxtrigger');
+
+        $(checkboxes).on('click', function() {
+            var input = $(this).parent().find('input[type="checkbox"]');
+            var tag = $(this).parent().find('i');
+            if($(input).val()) {
+                $(input).val('');
+                if($(this).hasClass('checked')) {
+                    $(this).removeClass('checked');
+                }
+                $(tag).css('color', '#191919');
+            } else {
+                $(input).val('on');
+                if(!$(this).hasClass('checked')) {
+                    $(this).addClass('checked');
+                }
+                $(tag).css('color', '#E11633');
+            }
+        });
+    });
+</script>
 </body>
 </html>

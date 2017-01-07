@@ -1739,6 +1739,7 @@ h2{
     display: inline-block;
     position: relative;
     margin: 22px 0;
+    vertical-align: top;
     /*border: 1px solid #000000;*/
 }
 
@@ -1816,6 +1817,14 @@ h2{
     padding-left: 15px;
 }
 
+input:focus {
+    outline: none;
+}
+
+input::-moz-focus-inner {
+    border: none;
+}
+
 .filter-input > span {
     font-family: "LatoRegular", sans-serif;
     font-size: 14px;
@@ -1858,6 +1867,7 @@ h2{
     font-family: "LatoRegular", sans-serif;
     font-size: 14px;
     color: #838383;
+
 }
 
 .filter-hotel-types {
@@ -1880,8 +1890,239 @@ h2{
     font-size: 14px;
     color: #838383;
     border: 2px solid #D0D0D0;
-    -webkit-border-radius: 40%;
-    -moz-border-radius: 40%;
-    border-radius: 40%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
     padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 8px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.filter-hotel-types > ul li:hover {
+    border: 2px solid #E11633;
+    background: #E11633;
+    color: #FFFFFF;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.filter-hotel-types > ul li.active {
+    border: 2px solid #E11633;
+    background: #E11633;
+    color: #FFFFFF;
+}
+
+.filter-price-range {
+    width: 100%;
+    height: 15px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.range-thumb {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.filter-price-options {
+    width: 100%;
+    height: 16px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.filter-price-options > span:nth-child(1) {
+    position: absolute;
+    left: 0;
+    font-family: "LatoRegular", sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.filter-price-options > span:nth-child(2) {
+    position: absolute;
+    right: 0;
+    font-family: "LatoRegular", sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.filter-block-row > input[type="checkbox"] {
+    display: none;
+}
+
+.filter-block-row > checkboxtrigger {
+    float: left;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    background: rgba(0,0,0,0);
+    border: 1px solid #838383;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.filter-block-row > checkboxtrigger.checked {
+    width: 15px;
+    height: 15px;
+    background: url('../images/input-checked.png') no-repeat center #E11633;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.filter-block-row > i {
+    font-family: "LatoWebMedium", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    /*float: left;*/
+    margin-left: 17px;
+    vertical-align: middle;
+    color: #191919;
+}
+
+.extra-filters {
+    width: 513px;
+    height: 441px;
+    display: inline-block;
+    position: relative;
+    margin-top: 22px;
+    margin-left: 50px;
+    vertical-align: top;
+}
+
+.filter-extra-scroll {
+    width: inherit;
+    height: 403px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.sans-size-block {
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.sans-size-block > select {
+    width: 150px;
+    height: 40px;
+    font-family: "LatoRegular", sans-serif;
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #d3d3d3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.sans-size-block > select:focus {
+    outline: none;
+}
+
+.checkboxes-row {
+    width: inherit;
+    height: 16px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.checkbox-item {
+    display: inline-block;
+    margin-right: 80px;
+    margin-bottom: 20px;
+}
+
+.checkbox-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.checkbox-item > i {
+    font-family: "LatoRegular", sans-serif;
+    font-size: 14px;
+    color: #191919;
+    font-style: normal;
+}
+
+.checkbox-item > input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-item > checkboxtrigger {
+    float: left;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    background: rgba(0,0,0,0);
+    border: 1px solid #838383;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.checkbox-item > checkboxtrigger.checked {
+    width: 15px;
+    height: 15px;
+    background: url('../images/input-checked.png') no-repeat center #E11633;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.checkboxes-row-how-more {
+    width: inherit;
+    text-align: right;
+    height: 15px;
+    margin-top: 5px;
+}
+
+.checkboxes-row-how-more > span {
+    cursor: pointer;
+    font-family: "LatoRegular", sans-serif;
+    font-size: 14px;
+    color: #838383;
+    margin-right: 20px;
+}
+
+.checkboxes-row-more-info {
+    width: inherit;
+    height: auto;
+    min-height: 50px;
+    border-top: 1px solid #d3d3d3;
+    margin-top: 10px;
+    padding-top: 10px;
+    display: none;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+.checkboxes-row-more-info.active {
+    display: block;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
