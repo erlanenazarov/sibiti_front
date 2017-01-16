@@ -323,46 +323,73 @@ h1{
 
 .content1 form{
     display: inline-block;
-    width: 86.16666666666667%;
+    width: 980px;
+    height: 50px;
 }
 
 .content1 input{
     float: left;
     font-family: "LatoRegular", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     color: #727272;
-    height: 74px;
+    height: 50px;
     padding-left: 20px;
     border: none;
     outline: none;
+    display: inline-block;
+}
+
+.content1 input::-webkit-outer-spin-button,
+.content1 input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 .content1 input[type="search"]{
     background: #fff url("../../assets/images/search_dropdown.png") 93.33333333333333% center no-repeat;
-    width: 47.87234042553191%;
+    width: 303px;
     border-right: 1px solid #c9c8c9;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
 }
 
 .content1 input:nth-child(2){
-    width: 20.30947775628627%;
+    width: 200px;
     border-right: 1px solid #c9c8c9;
+    background: url('../images/date-icon.png') no-repeat white;
+    background-position: 170px 15px;
 }
 
 .content1 input:nth-child(3){
-    width: 18.56866537717602%;
+    width: 200px;
+    border-right: 1px solid #c9c8c9;
+    background: url('../images/date-icon.png') no-repeat white;
+    background-position: 170px 15px;
+}
+
+.content1 input[type="number"] {
+    width: 185px;
+    -moz-appearance: textfield;
 }
 
 .content1 button{
-    background:  #e11633 url("../../assets/images/go!.png") center no-repeat;
+    background:  #e11633;
+    cursor: pointer;
     float: left;
-    width: 13.05609284332689%;
-    height: 74px;
+    width: 90px;
+    height: 50px;
     border: none;
     outline: none;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
+    display: inline-block;
+}
+
+.content1 button > img {
+    width: 38px;
 }
 
 input::-webkit-outer-spin-button,
@@ -413,6 +440,65 @@ h3 {
     overflow: hidden;
 }
 
+.tour > .hover-effect {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background: rgba(0,0,0,0);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.tour:hover > .hover-effect {
+    background: rgba(0,0,0,0.8);
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.tour:hover > .hover-effect > .clear-parent > a {
+    color: white;
+    border: 1px solid white;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.tour > .hover-effect > .clear-parent {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.tour > .hover-effect > .clear-parent > a {
+    font-family: "LatoLight", sans-serif;
+    font-size: 11px;
+    color: transparent;
+    border: 1px solid transparent;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
 .shadow{
     position: absolute;
     top: 0;
@@ -422,6 +508,7 @@ h3 {
     -webkit-box-shadow: inset 0 -170px 55px -30px rgba(0,0,0, 0.5);
     -moz-box-shadow: inset 0 -170px 55px -30px rgba(0,0,0, 0.5);
     box-shadow: inset 0 -170px 55px -30px rgba(0,0,0, 0.5);
+    z-index: 1;
 }
 
 .popular_tours > .tour:nth-child(2){
@@ -440,6 +527,7 @@ h3 {
     position: absolute;
     top: 30px;
     left: 30px;
+    z-index: 3;
 }
 
 .place{
@@ -483,6 +571,7 @@ h3 {
     left: 30px;
     right: 20px;
     bottom: 25px;
+    z-index: 3;
 }
 
 h4{
@@ -551,12 +640,44 @@ h4{
     width: 100%;
     height: 210px;
     padding: 12px;
+
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 .hotel_img img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.hotel:hover .hotel_img {
+    padding: 0;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.hotel:hover .hotel_img img {
+    border-radius: 0;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 /*.hotel_img img:hover .hotel_img{*/
@@ -1723,6 +1844,10 @@ h2{
     width: 100%;
     height: 491px;
     position: relative;
+
+    -webkit-box-shadow: 0 6px 18px 0 rgba(0,0,0,0.36);
+    -moz-box-shadow: 0 6px 18px 0 rgba(0,0,0,0.36);
+    box-shadow: 0 6px 18px 0 rgba(0,0,0,0.36);
 }
 
 .search-filters-parent > .carcass {
@@ -2126,3 +2251,4 @@ input::-moz-focus-inner {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+
