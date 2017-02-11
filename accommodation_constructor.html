@@ -31,130 +31,56 @@
     <div class="grid">
 
         <div id="tabs">
-
-            <ul class="button_tabs">
-                <li><a href="#fragment-1">1. Жилье</a></li>
-                <li><a href="#fragment-2">2. Удобства</a></li>
-                <li><a href="#fragment-3">3. Фото жилья</a></li>
-                <li><a href="#fragment-4">4. Местонахождение</a></li>
-                <li><a href="#fragment-5">5. Цена и описание</a></li>
-                <li><a href="#fragment-6">6. Правила и сроки</a></li>
-                <li><a href="#fragment-7">7. Завершение</a></li>
-            </ul>
-
-            <div id="fragment-1" class="ui-tabs-panel">
-                <div class="introduction">
-                    <h2>Давайте подготовим ваше объявление.</h2>
-
-                    <div class="line"></div>
-
-                    <p>Sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                        laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque.
-                    </p>
-
-                    <button type="button" name="button" class="button">начать</button>
-
-                    <!--<label class="select">Select field label:<br>-->
-                    <!--<select name="select-name" id="select-beast">-->
-                    <!--<option selected="" disabled>Выберите пункт</option>-->
-                    <!--<option value="1">Пункт 1</option>-->
-                    <!--<option value="2">Пункт 2</option>-->
-                    <!--<optgroup label="Group1">-->
-                    <!--<option value="1">team 1</option>-->
-                    <!--<option value="2">team 2</option>-->
-                    <!--</optgroup>-->
-                    <!--<option value="3">Пункт 3</option>-->
-                    <!--</select>-->
-                    <!--</label>-->
-                </div>
-
-
+            <div class="steps">
+                <ul>
+                    <li class="active">1. Жильё</li>
+                    <li>2. Удобства</li>
+                    <li>3. Описание и фото</li>
+                    <li>4. Местонахождение</li>
+                    <li>5. Цена и сроки</li>
+                    <li>6. Завершение</li>
+                </ul>
             </div>
-
-            <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide">
-                <div class="step step1">
-                    <h2>Давайте подготовим ваше объявление.</h2>
-
-                    <div class="line"></div>
-
-                    <form method="post" action="#">
-                        <label for="select1">Тип жилья<br>
-                            <select name="select-name" id="select1">
-                                <option selected="" disabled>Выберите пункт</option>
-                                <option value="1">Квартира</option>
-                                <option value="2">Юрта</option>
-                                <!--<optgroup label="Group1">-->
-                                    <!--<option value="1">team 1</option>-->
-                                    <!--<option value="2">team 2</option>-->
-                                <!--</optgroup>-->
-                                <option value="3">Дом</option>
+            <div class="progress-bar">
+                <ul id="progress-bar">
+                </ul>
+            </div>
+            <div class="tab">
+                <div class="tab-header">
+                    Давайте подготовим ваше объявление
+                </div>
+                <div class="tab-content">
+                    <span>Sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.</span>
+                </div>
+                <div class="tab-control">
+                    <button data-type="next">Начать&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tab step-1">
+                <div class="tab-header">
+                    1. Основные сведения
+                </div>
+                <div class="tab-content">
+                    <div class="input-row">
+                        <div class="ac-type">
+                            <span>Какой тип жилья?</span>
+                            <select id="ac-type">
+                                <option>Юрта</option>
+                                <option>Гостиница</option>
+                                <option>Hostel</option>
+                                <option>Семейный дом</option>
+                                <option>Палатка</option>
                             </select>
-                        </label>
-
-                        <label for="select2">Тип размещения<br>
-                            <select name="select-name" id="select2">
-                                <option selected="" disabled>Выберите пункт</option>
-                                <option value="1">Отдельная комната</option>
-                                <option value="2">Совместная комната</option>
-                                <!--<optgroup label="Group1">-->
-                                <!--<option value="1">team 1</option>-->
-                                <!--<option value="2">team 2</option>-->
-                                <!--</optgroup>-->
-                                <option value="3">Отдельная квартира</option>
-                            </select>
-                        </label>
-
-                        <div class="amount">
-                            <label for="number1">Количество гостей<br>
-                                <input type="number" value="1" size="5" maxlength="3" id="number1">
-                            </label>
-                            <div class="minus"><img src="assets/images/minus.png" alt="minus"></div>
-                            <div class="plus"><img src="assets/images/plus.png" alt="plus"></div>
                         </div>
-
-                        <!--<div class="b_number">-->
-                            <!--<div class="minus"><img src="assets/images/minus.png" alt="minus"></div>-->
-                            <!--<label>-->
-                                <!--<input type="number" value="1" size="5" maxlength="3">-->
-                            <!--</label>-->
-                            <!--<div class="plus"><img src="assets/images/plus.png" alt="plus"></div>-->
-                        <!--</div>-->
-
-                        <button type="button" name="button"><img src="assets/images/prev.png" alt="prev"> назад</button>
-                        <button type="button" name="button">далее <img src="assets/images/next.png" alt="next"></button>
-
-                    </form>
+                    </div>
+                </div>
+                <div class="tab-header">
+                    1. Дополнительные сведения
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
                 </div>
             </div>
-
-            <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide">
-                <p>ante. Mauris Vestibulum est. fames egestas quam, leo. amet tristique sit libero egestas. ultricies mi
-                    turpis senectus Pellentesque habitant eu ac morbi netus eget, Aenean malesuada vitae, semper.
-                    eleifend et feugiat vitae amet, placerat Donec et tortor ultricies tempor quam sit </p>
-            </div>
-
-            <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide">
-
-            </div>
-
-            <div id="fragment-5" class="ui-tabs-panel ui-tabs-hide">
-
-            </div>
-
-            <div id="fragment-6" class="ui-tabs-panel ui-tabs-hide">
-
-            </div>
-
-            <div id="fragment-7" class="ui-tabs-panel ui-tabs-hide">
-
-            </div>
-
-            <p>The end.</p>
         </div>
 
     </div>
