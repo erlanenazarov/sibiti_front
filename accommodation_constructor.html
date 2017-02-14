@@ -43,6 +43,9 @@
             </div>
             <div class="progress-bar">
                 <ul id="progress-bar">
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
             </div>
             <div class="tab">
@@ -63,22 +66,120 @@
                 <div class="tab-content">
                     <div class="input-row">
                         <div class="ac-type">
-                            <span>Какой тип жилья?</span>
+                            <div class="span">Какой тип жилья?</div>
                             <select id="ac-type">
                                 <option>Юрта</option>
-                                <option>Гостиница</option>
+                                <option selected>Гостиница</option>
                                 <option>Hostel</option>
                                 <option>Семейный дом</option>
                                 <option>Палатка</option>
                             </select>
                         </div>
+                        <div class="type">
+                            <div class="span">Что будет в распоряжении гостей?</div>
+                            <select id="type">
+                                <option>Целлый дом</option>
+                                <option selected>Отдельная комната</option>
+                                <option>Кровать</option>
+                                <option>Место на полу</option>
+                            </select>
+                        </div>
+                        <div class="guest-count">
+                            <div class="span">Сколько гостей вмещается?</div>
+                            <div class="input-number">
+                                <input type="number" placeholder="" value="1" min="1" id="guest_count">
+                                <div class="input-arrows">
+                                    <div class="input-number-up-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-up.png"></div>
+                                    <div class="input-number-down-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-down.png"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-header">
-                    1. Дополнительные сведения
+                    2. Дополнительные сведения
+                </div>
+                <div class="tab-content">
+                    <div class="input-row group">
+                        <div class="ac-count">
+                            <div class="span">Сколько спален для гостей?</div>
+                            <div class="input-number">
+                                <input type="number" placeholder="" value="1" min="1" id="bedrooms_count">
+                                <div class="input-arrows">
+                                    <div class="input-number-up-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-up.png"></div>
+                                    <div class="input-number-down-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-down.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ac-count">
+                            <div class="span">Сколько кроватей для гостей?</div>
+                            <div class="input-number">
+                                <input type="number" placeholder="" value="1" min="1" id="bed_count">
+                                <div class="input-arrows">
+                                    <div class="input-number-up-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-up.png"></div>
+                                    <div class="input-number-down-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-down.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ac-count">
+                            <div class="span">Сколько ванных для гостей?</div>
+                            <div class="input-number">
+                                <input type="number" placeholder="" value="1" min="1" id="bathroom_count">
+                                <div class="input-arrows">
+                                    <div class="input-number-up-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-up.png"></div>
+                                    <div class="input-number-down-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-down.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-control">
                     <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tab step-2">
+                <div class="tab-header">
+                    Какие удобства вы предлогаете?
+                </div>
+                <div class="tab-content">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="toilet" value=""/>
+                        <checkboxtrigger></checkboxtrigger>
+                        <i>Туалетные пренадлежности</i>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="breakfast" value=""/>
+                        <checkboxtrigger></checkboxtrigger>
+                        <i>Завтрак, кофе, чай</i>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="wi-fi" value=""/>
+                        <checkboxtrigger></checkboxtrigger>
+                        <i>Wi-Fi</i>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="work-place" value=""/>
+                        <checkboxtrigger></checkboxtrigger>
+                        <i>Стол / Рабочее место</i>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="shampoo" value=""/>
+                        <checkboxtrigger></checkboxtrigger>
+                        <i>Шампунь</i>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="fire_place" value=""/>
+                        <checkboxtrigger></checkboxtrigger>
+                        <i>Камин</i>
+                    </div>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tab step-2-1">
+                <div class="tab-header">
+                    2. Общие помещения, которые доступны для гостей
                 </div>
             </div>
         </div>
@@ -153,89 +254,47 @@
 <!--<script  type="text/javascript" src="assets/js/selectize.js"></script>-->
 <script src="assets/js/script.js"></script>
 
-    <script type="text/javascript" >
-            $(document).ready(function() {
-                $('.minus').click(function () {
-//                    var $input = $(this).parent().find('.p_quantity');
-                    var count = parseInt($($input).attr('value')) - 1;
-                    count = count < 1 ? 1 : count;
-//                    $input.attr('value', count);
-
-//                    countTotal();
-
-                    return false;
-                });
-
-                $('.plus').click(function () {
-//                    var $input = $(this).parent().find('.p_quantity');
-                    $input.attr('value', parseInt($input.val()) + 1);
-
-//                    countTotal();
-
-                    return false;
-                });
-
-//                function countTotal() {
-//                    var sum = 0;
-//                    var i = 0;
-//                    while (i < $('.p_quantity').length) {
-//                        product = $('.p_quantity').eq(i);
-//                        sum += (product).attr('value') * $(product).attr('data-price');
-//                        i++;
-//                    }
-//
-//                    $('.b_price .overall_total').text(sum);
-//
-//                    console.log(sum)
-//
-//                }
-
-//                $('.p_delete').on('click', function() {
-//                    var element = $(this).closest('tr');
-//                    $(element).fadeOut("slow", function () {
-//                        $(element).remove();
-//                    });
-//
-//                    countTotal();
-//                });
+<script type="text/javascript" >
+    $(document).on('click', function() {
+        $('.input-number-up-arrow').each(function(i, obj) {
+            $(obj).unbind('click').bind('click', function(event){
+                var input = $('input', $(this).parent().parent());
+                var value = parseInt($(input).val());
+                value++;
+                $(input).val(value);
             });
+        });
+
+        $('.input-number-down-arrow').each(function(i, obj) {
+            $(obj).unbind('click').bind('click', function(event) {
+                var input = $('input', $(this).parent().parent());
+                var value = parseInt($(input).val());
+                if(value > 1) value--;
+                $(input).val(value);
+            });
+        });
+
+        var checkboxes = $('checkboxtrigger');
+
+        $(checkboxes).on('click', function() {
+            var input = $(this).parent().find('input[type="checkbox"]');
+            var tag = $(this).parent().find('i');
+            if($(input).val()) {
+                $(input).val('');
+                if($(this).hasClass('checked')) {
+                    $(this).removeClass('checked');
+                }
+                $(tag).css('color', '#191919');
+            } else {
+                $(input).val('on');
+                if(!$(this).hasClass('checked')) {
+                    $(this).addClass('checked');
+                }
+                $(tag).css('color', '#E11633');
+            }
+        });
+    });
 </script>
 
-<!--<script>-->
-<!--$('#select-beast').selectize({-->
-<!--create: true,-->
-<!--sortField: 'text'-->
-<!--});-->
-<!--</script>-->
-
-<!--<script type="text/javascript">-->
-<!--$(function() {-->
-
-<!--var $tabs = $('#tabs').tabs();-->
-
-<!--$(".ui-tabs-panel").each(function(i){-->
-
-<!--var totalSize = $(".ui-tabs-panel").size() - 1;-->
-
-<!--if (i != totalSize) {-->
-<!--next = i + 2;-->
-<!--$(this).append("<a href='#' class='next-tab mover' rel='" + next + "'>Next Page &#187;</a>");-->
-<!--}-->
-
-<!--if (i != 0) {-->
-<!--prev = i;-->
-<!--$(this).append("<a href='#' class='prev-tab mover' rel='" + prev + "'>&#171; Prev Page</a>");-->
-<!--}-->
-
-<!--});-->
-
-<!--$('.next-tab, .prev-tab').click(function() {-->
-<!--$tabs.tabs('select', $(this).attr("rel"));-->
-<!--return false;-->
-<!--});-->
-
-
-<!--});-->
-<!--</script>-->
 </body>
 </html>
