@@ -139,38 +139,32 @@
             </div>
             <div class="tab step-2">
                 <div class="tab-header">
-                    Какие удобства вы предлогаете?
+                    1. Какие удобства вы предлогаете?
                 </div>
                 <div class="tab-content">
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="toilet" value=""/>
-                        <checkboxtrigger></checkboxtrigger>
-                        <i>Туалетные пренадлежности</i>
+                    <div class="wrap">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="toilet" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Туалетные пренадлежности</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="wi-fi" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Wi-Fi</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="shampoo" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Шампунь</i>
+                        </div>
                     </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="breakfast" value=""/>
-                        <checkboxtrigger></checkboxtrigger>
-                        <i>Завтрак, кофе, чай</i>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="wi-fi" value=""/>
-                        <checkboxtrigger></checkboxtrigger>
-                        <i>Wi-Fi</i>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="work-place" value=""/>
-                        <checkboxtrigger></checkboxtrigger>
-                        <i>Стол / Рабочее место</i>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="shampoo" value=""/>
-                        <checkboxtrigger></checkboxtrigger>
-                        <i>Шампунь</i>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="checkbox" id="fire_place" value=""/>
-                        <checkboxtrigger></checkboxtrigger>
-                        <i>Камин</i>
+                    <div class="wrap">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="breakfast" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Завтрак, кофе, чай</i>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-control">
@@ -180,6 +174,124 @@
             <div class="tab step-2-1">
                 <div class="tab-header">
                     2. Общие помещения, которые доступны для гостей
+                </div>
+                <div class="tab-content">
+                    <div class="wrap">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="kitchen" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Кухня</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="wash_machine" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Стиральная машина</i>
+                        </div>
+                    </div>
+                    <div class="wrap">
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab step-3">
+                <div class="tab-header">
+                    1. Дайте название и опишите своё жильё
+                </div>
+                <div class="tab-content">
+                    <div class="ac-title">
+                        <div class="group">
+                            <span class="wrap-left">Название</span>
+                            <span class="wrap-right" data-type="title-symbols">Ост. 4 символа</span>
+                        </div>
+                        <input type="text" placeholder="Просторная комната в центре" value="" maxlength="100">
+                    </div>
+                    <div class="ac-description">
+                        <div class="group">
+                            <span class="wrap-left">Описание</span>
+                            <span class="wrap-right" data-type="description-symbols">Ост. 15 символов</span>
+                        </div>
+                        <textarea placeholder="Описание">Sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.
+ ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</textarea>
+                    </div>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tab step-3-1">
+                <div class="tab-header">
+                    2. Загрузите фото жилья
+                </div>
+                <div class="tab-content">
+                    <div class="group">
+                        <span class="wrap-left">Фотографии</span>
+                    </div>
+                    <ul>
+                        <li><img src="assets/images/upload-image-placeholder.png"></li>
+                        <li><img src="assets/images/upload-image-placeholder.png"></li>
+                        <li><img src="assets/images/upload-image-placeholder.png"></li>
+                    </ul>
+                    <div class="group">
+                        <span class="wrap-left" style="cursor: pointer;"><i></i>&nbsp;&nbsp;&nbsp;Загрузить больше фотографий</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab step-4">
+                <div class="tab-header">1. Где находится ваше жильё?</div>
+                <div class="tab-content">
+                    <div class="input-grid">
+                        <div class="input-item">
+                            <span>Область</span><br />
+                            <input type="text" placeholder="" value="Чуйская область" id="area">
+                        </div>
+                        <div class="input-item">
+                            <span>Город</span><br />
+                            <input type="text" placeholder="" value="Чуйская область" id="city">
+                        </div>
+                        <div class="input-item">
+                            <span>Улица</span><br />
+                            <input type="text" placeholder="" value="Чуйская область" id="street">
+                        </div>
+                        <div class="input-item">
+                            <span>Номер дома</span><br />
+                            <input type="number" placeholder="" value="13" id="home_number">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tab step-4-1">
+                <div class="tab-header">2. Укажите ваш дом на карте</div>
+                <div class="tab-content">
+                    <div class="ac-location"></div>
+                </div>
+            </div>
+            <div class="tab step-5">
+                <div class="tab-header">1. Цена и сроки</div>
+                <div class="tab-content">
+                    <div class="ac-price">
+                        <div class="group">
+                            <span class="wrap-left">Цена для одного гостя за сутки</span>
+                        </div>
+                        <div class="input-number">
+                            <input type="number" placeholder="" value="1" min="1" id="price">
+                            <div class="input-arrows">
+                                <div class="input-number-up-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-up.png"></div>
+                                <div class="input-number-down-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-down.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tab step-5-1">
+                <div class="tab-header">2. Правила для гостей</div>
+                <div class="tab-content">
+
                 </div>
             </div>
         </div>
@@ -272,26 +384,6 @@
                 if(value > 1) value--;
                 $(input).val(value);
             });
-        });
-
-        var checkboxes = $('checkboxtrigger');
-
-        $(checkboxes).on('click', function() {
-            var input = $(this).parent().find('input[type="checkbox"]');
-            var tag = $(this).parent().find('i');
-            if($(input).val()) {
-                $(input).val('');
-                if($(this).hasClass('checked')) {
-                    $(this).removeClass('checked');
-                }
-                $(tag).css('color', '#191919');
-            } else {
-                $(input).val('on');
-                if(!$(this).hasClass('checked')) {
-                    $(this).addClass('checked');
-                }
-                $(tag).css('color', '#E11633');
-            }
         });
     });
 </script>
