@@ -277,11 +277,93 @@
                         </div>
                         <div class="input-number">
                             <input type="number" placeholder="" value="1" min="1" id="price">
+                            <span>Сом</span>
                             <div class="input-arrows">
                                 <div class="input-number-up-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-up.png"></div>
                                 <div class="input-number-down-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-down.png"></div>
                             </div>
                         </div>
+                    </div>
+                    <div class="ac-check-in-time">
+                        <div class="group">
+                            <span class="wrap-left">Время заезда&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span></span></span>
+                        </div>
+                        <select id="check_in_time">
+                            <option>00:00</option>
+                            <option>01:00</option>
+                            <option>02:00</option>
+                            <option>03:00</option>
+                            <option>04:00</option>
+                            <option>05:00</option>
+                            <option>06:00</option>
+                            <option>07:00</option>
+                            <option>08:00</option>
+                            <option>09:00</option>
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>12:00</option>
+                            <option>13:00</option>
+                            <option>14:00</option>
+                            <option selected>15:00</option>
+                            <option>16:00</option>
+                            <option>17:00</option>
+                            <option>18:00</option>
+                            <option>19:00</option>
+                            <option>20:00</option>
+                            <option>21:00</option>
+                            <option>22:00</option>
+                            <option>23:00</option>
+                        </select>
+                    </div>
+                    <div class="ac-check-out-time">
+                        <div class="group">
+                            <span class="wrap-left">Время выезда&nbsp;&nbsp;&nbsp;&nbsp;<span></span></span>
+                        </div>
+                        <select id="check_out_time">
+                            <option>00:00</option>
+                            <option>01:00</option>
+                            <option>02:00</option>
+                            <option>03:00</option>
+                            <option>04:00</option>
+                            <option>05:00</option>
+                            <option>06:00</option>
+                            <option>07:00</option>
+                            <option>08:00</option>
+                            <option>09:00</option>
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>12:00</option>
+                            <option>13:00</option>
+                            <option>14:00</option>
+                            <option>15:00</option>
+                            <option>16:00</option>
+                            <option>17:00</option>
+                            <option>18:00</option>
+                            <option>19:00</option>
+                            <option>20:00</option>
+                            <option>21:00</option>
+                            <option selected>22:00</option>
+                            <option>23:00</option>
+                        </select>
+                    </div>
+                    <div class="ac-checkboxes">
+                        <div class="checkbox-item"><input type="checkbox" id="check-in-free" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Прибытие круглосуточно</i>
+                        </div>
+                        <div class="checkbox-description">Ваши гости могут придти и уйти когда угодно</div>
+                    </div>
+                    <div class="ac-checkboxes">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="auto-book" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Автобронирование</i>
+                        </div>
+                        <div class="checkbox-description">Вы обязаны четко следить за доступностью вашего жилья<br />
+                            и своевременно обновлять календарь</div>
+                    </div>
+                    <div class="update-calendar">
+                        <button type="button">Обновить календарь</button> <span class="awesome">&nbsp;&nbsp;&nbsp;&nbsp;</span>
                     </div>
                 </div>
                 <div class="tab-control">
@@ -291,7 +373,47 @@
             <div class="tab step-5-1">
                 <div class="tab-header">2. Правила для гостей</div>
                 <div class="tab-content">
-
+                    <div class="wrap">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="children-available" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Подходит для детей</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="family-available" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Подходит для семьи</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="animals-available" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Можно с животными</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="smoke-available" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Можно курить</i>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="party" value=""/>
+                            <checkboxtrigger></checkboxtrigger>
+                            <i>Можно устроить вечеринки</i>
+                        </div>
+                    </div>
+                    <div class="other-rules">
+                        <span>Другие правила</span><br />
+                        <input type="text" placeholder="Что ещё стоит знать гостям?" id="new-rules"> <button type="button" id="add-rule">Добавить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab step-6">
+                <div class="tab-header">Поздравляем, вы готовы принимать гостей!</div>
+                <div class="tab-content">
+                    <span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</span>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="finish">Завершить и отправить заявку</button>
                 </div>
             </div>
         </div>

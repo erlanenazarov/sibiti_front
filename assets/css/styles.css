@@ -2832,3 +2832,263 @@ span.wrap-right {
     height: 280px;
     background: #39B54A;
 }
+
+.step-5 {
+    width: 533px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ac-price {
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.step-5 .wrap-left {
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #838383;
+    margin-bottom: 15px;
+}
+
+.ac-price > .span,
+.ac-price > .span{
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #838383;
+    margin-bottom: 5px;
+    position: relative;
+    height: auto;
+}
+
+.ac-price > .input-number{
+    width: 250px;
+    height: 40px;
+    border: 1px solid #D0D0D0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0);
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #191919;
+    position: relative;
+}
+
+.ac-price > .input-number > input[type="number"] {
+    background: none;
+    border: none;
+    height: inherit;
+    width: 150px;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    padding-left: 10px;
+    box-sizing: border-box;
+    /*border: 1px solid #090909;*/
+}
+
+.ac-price > .input-number > span {
+    margin-left: 23px;
+}
+
+.ac-price > .input-number > .input-arrows{
+    float: right;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.ac-check-in-time, .ac-check-out-time {
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.ac-check-in-time select, .ac-check-out-time select {
+    width: 120px;
+    height: 40px;
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #191919;
+    border: 1px solid #D0D0D0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('../images/select-arrow.png') no-repeat rgba(0,0,0,0);
+    background-position-x: 90px;
+    background-position-y: 15px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.wrap-left > span {
+    font-family: FontAwesome, sans-serif;
+    cursor: pointer;
+}
+
+.ac-checkboxes {
+    margin-top: 25px;
+}
+
+.ac-checkboxes > .checkbox-item {
+    margin-bottom: 0;
+}
+
+.checkbox-description {
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #838383;
+    margin-left: 25px;
+}
+
+.awesome {
+    font-family: FontAwesome, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.update-calendar {
+    width: 262px;
+    height: 40px;
+    margin-top: 40px;
+}
+
+.update-calendar > button {
+    width: 228px;
+    height: 40px;
+    background: rgba(0,0,0,0);
+    border: 1px solid #191919;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #191919;
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.update-calendar > button:hover {
+    background: #191919;
+    color: #FFFFFF;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.step-5-1 {
+    width: 589px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 68px;
+}
+
+.other-rules {
+
+}
+
+.other-rules > span {
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #838383;
+}
+
+.other-rules > input {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #D0D0D0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #838383;
+    background: rgba(0,0,0,0);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 13px;
+    margin-top: 15px;
+}
+
+.other-rules > button {
+    width: 140px;
+    height: 40px;
+    border: 1px solid #191919;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    vertical-align: top;
+    margin-left: 10px;
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #191919;
+    cursor: pointer;
+    background: rgba(0,0,0,0);
+    margin-top: 15px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.other-rules > button:hover {
+    background: #191919;
+    color: #FFFFFF;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+.step-6 {
+    width: 553px;
+}
+
+.tab-control > button[data-type="finish"] {
+    padding: 11px 35px;
+    border: 1px solid #E11633;
+    background: #E11633;
+    font-family: LatoBold, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.tab-control > button[data-type="finish"]:hover {
+    color: #E11633;
+    background: rgba(0,0,0,0);
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
