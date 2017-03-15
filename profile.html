@@ -25,12 +25,116 @@
 
         <div class="header-right-side">
             <div class="profile">
-                <a href="#">Войти</a>
+                <a href="#" id="login-window">Войти</a>
             </div>
             <div class="language"></div>
         </div>
     </div>
 </header>
+
+<div class="carcass">
+    <div class="profile-content group">
+        <div class="profile-avatar">
+            <div class="photo">
+                <img src="assets/images/jonathan.png">
+            </div>
+            <div class="language group">
+                <div class="key">
+                    Языки
+                </div>
+                <div class="value">
+                    Русский, кыргызча, English
+                </div>
+            </div>
+        </div>
+        <div class="profile-info">
+            <div class="profile-name">
+                Jonathan<br>
+                <span>Бишкек, Кыргызская Республика</span>
+            </div>
+            <div class="profile-description">
+                I live on the Lizard peninsular, as I find this area one of the most inspirational in the UK. I am an artist/builder who creates spaces of light and beauty. My aim is to welcome you into a dwelling for your pleasure and relaxation. I enjoy using ideas of times passed and endeavor to achieve an ‘other worldliness’ in my work.
+                I spend my time in constant contemplation of the next project in mind. Other than that you can find me enjoying music and dance, or Cornish coastal walking with my partner and dog.
+            </div>
+            <div class="profile-actions">
+                <ul>
+                    <li class="active"><a href="#">Объявления(4)</a></li>
+                    <li><a href="#">Отзывы(5)</a></li>
+                </ul>
+            </div>
+            <div class="hotels">
+                <div class="hotel">
+                    <div class="hotel_img">
+                        <img src="assets/images/hotel1.jpg" alt="hotel">
+
+                        <div class="cost"><span>от</span><br>$40</div>
+                    </div>
+
+                    <div class="hotel_desc">
+                        <h5>Куль-Нуру</h5>
+
+                        <p>Гостевой Дом, Иссык-Куль</p>
+
+                        <div class="hotel_rate"><img src="assets/images/hotel_rate.png" alt="rate">4,5</div>
+                        <div class="hotel_vote"><img src="assets/images/vote_icon.png" alt="icon">17</div>
+                    </div>
+                </div>
+
+                <div class="hotel">
+                    <div class="hotel_img">
+                        <img src="assets/images/hotel1.jpg" alt="hotel">
+
+                        <div class="cost"><span>от</span><br>$80</div>
+                    </div>
+
+                    <div class="hotel_desc">
+                        <h5>Санрайз Ош</h5>
+
+                        <p>Отель, Ош</p>
+
+                        <div class="hotel_rate"><img src="assets/images/hotel_rate.png" alt="rate">7,2</div>
+                        <div class="hotel_vote"><img src="assets/images/vote_icon.png" alt="icon">24</div>
+                    </div>
+                </div>
+
+                <div class="hotel">
+                    <div class="hotel_img">
+                        <img src="assets/images/hotel1.jpg" alt="hotel">
+
+                        <div class="cost"><span>от</span><br>$100</div>
+                    </div>
+
+                    <div class="hotel_desc">
+                        <h5>Бек Каракол</h5>
+
+                        <p>Квартира, Каракол</p>
+
+                        <div class="hotel_rate"><img src="assets/images/hotel_rate.png" alt="rate">2,8</div>
+                        <div class="hotel_vote"><img src="assets/images/vote_icon.png" alt="icon">38</div>
+                    </div>
+                </div>
+
+                <div class="hotel">
+                    <div class="hotel_img">
+                        <img src="assets/images/hotel1.jpg" alt="hotel">
+
+                        <div class="cost"><span>от</span><br>$40</div>
+                    </div>
+
+                    <div class="hotel_desc">
+                        <h5>Риверсайд</h5>
+
+                        <p>Гостевой Дом, Джалал-Абад</p>
+
+                        <div class="hotel_rate"><img src="assets/images/hotel_rate.png" alt="rate">9,6</div>
+                        <div class="hotel_vote"><img src="assets/images/vote_icon.png" alt="icon">99</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <footer>
@@ -93,27 +197,36 @@
     </div>
 </footer>
 
-<div class="overlay">
+<div class="overlay" id="login-modal">
     <div class="modal-body">
         <div class="child">
-            <div class="modal-header">Вход</div>
+            <div class="modal-header" id="modal-header">Авторизация</div>
             <div class="modal-content">
                 <form action="#" method="POST">
                     <div class="form-row">
-                        <input type="text" placeholder="E-Mail" name="email">
+                        <input type="text" placeholder="Логин" name="login">
+                    </div>
+                    <div class="form-row" style="height: 0; overflow: hidden; margin-top: 0;" id="form-email">
+                        <input type="email" placeholder="example@cbt.kg" name="email">
                     </div>
                     <div class="form-row">
-                        <input type="password" placeholder="password" name="password">
+                        <input type="password" placeholder="Пароль" name="password">
+                    </div>
+                    <div class="form-row" style="height: 0; overflow: hidden; margin-top: 0;" id="form-re-password">
+                        <input type="password" placeholder="Повторите пароль" name="re_password">
                     </div>
                     <div class="form-row">
-                        <button type="submit">Войти</button>
+                        <button type="submit" id="submit-button">Войти</button>
                     </div>
                 </form>
                 <div class="login-form-actions">
-                    <div class="forgot-password">Забыли пароль?</div>
-                    <div class="register">Зарегистрироваться</div>
+                    <div class="forgot-password"><a href="#">Забыли пароль?</a></div>
+                    <div class="register"><a href="#" id="register-trigger">Зарегистрироваться</a></div>
                 </div>
-                <a href="#" class="login-as-facebook"><span class="font-awesome"></span> Войти с помощью Facebook</a>
+                <div class="facebook-login">
+                    <div class="facebook-icon"><span class="font-awesome"></span></div>
+                    <div class="facebook-link"><a href="#">Войти с помощью Facebook</a></div>
+                </div>
             </div>
             <div class="close-md">Закрыть</div>
         </div>
@@ -121,6 +234,65 @@
 </div>
 
 <script src="assets/js/jquery-3.1.0.min.js"></script>
-<script src="assets/js/script.js"></script>
+<!--<script src="assets/js/script.js"></script>-->
+<script>
+    var modalTrigger = $('#login-window');
+    var overlay = $('#login-modal');
+
+    $(modalTrigger).on('click', function(event) {
+        event.preventDefault();
+        $(overlay).fadeIn('fast');
+    });
+
+    $('.close-md').each(function (i, obj) {
+        $(obj).on('click', function(event) {
+            var modal_body = $('.modal-body', $(overlay));
+            $(modal_body).addClass('closed');
+            $(overlay).fadeOut('fast', function () {
+                $(modal_body).removeClass('closed');
+            });
+        });
+    });
+
+    var registerTrigger = $('#register-trigger');
+    var submitTrigger = $('#submit-button');
+
+    var switcher = false;
+    $(registerTrigger).on('click', function(event) {
+        event.preventDefault();
+
+        if(!switcher) {
+            $('#form-email').animate({
+                height: 40,
+                'margin-top': 8
+            }, 500);
+            $('#form-re-password').animate({
+                height: 40,
+                'margin-top': 8
+            }, 500);
+            $('#submit-button').html('Зарегистрироваться');
+            $(this).html('Войти');
+            $('#modal-header').animate({
+                'margin-top': 40
+            }, 500);
+            switcher = true;
+        } else {
+            $('#form-email').animate({
+                height: 0,
+                'margin-top': 0
+            }, 500);
+            $('#form-re-password').animate({
+                height: 0,
+                'margin-top': 0
+            }, 500);
+            $('#submit-button').html('Войти');
+            $(this).html('Зарегистрироваться');
+            $('#modal-header').animate({
+                'margin-top': 80
+            }, 500);
+            switcher = false;
+        }
+    });
+</script>
 </body>
 </html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pingo</title>
+    <link rel="stylesheet" href="assets/css/selectize.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <div class="grid header group">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Туры</a></li>
+                <li><a href="#">Направления</a></li>
+                <li><a href="#">Размещение</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#"><img src="assets/images/search_icon.png" alt="search-icon"></a></li>
+            </ul>
+        </nav>
+
+        <a class="logo" href="#"><img src="assets/images/logotype.png" alt="logotype"></a>
+
+        <div class="header-right-side">
+            <div class="profile">
+                <a href="#" id="login-window">Войти</a>
+            </div>
+            <div class="language"></div>
+        </div>
+    </div>
+</header>
+
+<div class="tour-constructor">
+    <div class="grid">
+
+        <div id="tabs">
+            <div class="steps">
+                <ul>
+                    <li class="active">1. Установка тура</li>
+                    <li>2. Условия</li>
+                    <li>3. Требования</li>
+                    <li>4. Описание</li>
+                    <li>5. Завершение</li>
+                </ul>
+            </div>
+            <div class="progress-bar">
+                <ul id="progress-bar">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="tour-tab">
+                <div class="tab-header">
+                    Давайте подготовим ваш тур
+                </div>
+                <div class="tab-content">
+                    <span>Sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.</span>
+                </div>
+                <div class="tab-control">
+                    <button data-type="next">Начать&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tour-tab step-1">
+                <div class="tab-header">
+                    1. Сезонность и длительность
+                </div>
+                <div class="tab-content">
+                    <div class="tour-tab-row">
+                        <span>Отметьте сезон или месяцы, в которые можно посетить тур</span>
+                        <div class="tour-months">
+                            <ul>
+                                <li class="active">Декабрь</li>
+                                <li>Январь</li>
+                                <li>Февраль</li>
+                                <li>Март</li>
+                                <li>Апрель</li>
+                                <li>Май</li>
+                                <li>Июнь</li>
+                                <li>Июль</li>
+                                <li>Август</li>
+                                <li>Сентябрь</li>
+                                <li>Октябрь</li>
+                                <li>Ноябрь</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tour-tab-row">
+                        <span>Сколько дней длится отдельный тур?</span>
+                        <div>
+                            <div class="tour-tab-row-integer-field">
+                                <div class="span">От</div>
+                                <div class="input-number">
+                                    <input type="number" placeholder="" value="1" min="1" id="from">
+                                    <div class="input-arrows">
+                                        <div class="input-number-up-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-up.png"></div>
+                                        <div class="input-number-down-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-down.png"></div>
+                                    </div>
+                                </div>
+                                <div class="description">Дней</div>
+                            </div>
+                            <div class="tour-tab-row-integer-field">
+                                <div class="span">До</div>
+                                <div class="input-number">
+                                    <input type="number" placeholder="" value="1" min="1" id="to">
+                                    <div class="input-arrows">
+                                        <div class="input-number-up-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-up.png"></div>
+                                        <div class="input-number-down-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-down.png"></div>
+                                    </div>
+                                </div>
+                                <div class="description">Дней</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tour-tab step-1-2">
+                <div class="tab-header">
+                    2. Для кого предназначен тур?
+                </div>
+                <div class="tab-content">
+                    <div class="selectable">
+                        <div class="span">Категория тура?</div>
+                        <select>
+                            <option>Пеший</option>
+                            <option selected>Конный</option>
+                        </select>
+                    </div>
+                    <div class="selectable">
+                        <div class="span">Уровень сложности тура</div>
+                        <select>
+                            <option>Easy</option>
+                            <option selected>Medium</option>
+                            <option>Moderate</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="tour-tab step-2">
+                <div class="tab-header">
+                    Размещение и питание
+                </div>
+                <div class="tab-content">
+                    <div class="ac-description">
+                        <div class="group">
+                            <span class="wrap-left">Сколько ночёвок и обедов будет у туристов?</span>
+                            <span class="wrap-right" data-type="description-symbols">Ост. 15 символов</span>
+                        </div>
+                        <textarea placeholder="Описание">Sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.
+ ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</textarea>
+                    </div>
+                    <div class="tour-tab-row">
+                        <span>Сколько дней длится отдельный тур?</span>
+                        <div>
+                            <div class="tour-tab-row-integer-field">
+                                <div class="span">До</div>
+                                <div class="input-number">
+                                    <input type="number" placeholder="" value="1" min="1">
+                                    <div class="input-arrows">
+                                        <div class="input-number-up-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-up.png"></div>
+                                        <div class="input-number-down-arrow" onselect="return null;"><img src="assets/images/input-number-arrow-down.png"></div>
+                                    </div>
+                                </div>
+                                <div class="description">гостей</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tour-tab step-3">
+                <div class="tab-header">
+                    1. Требования вашего тура
+                </div>
+                <div class="tab-content">
+                    <div class="tour-tab-row">
+                        <div class="tour-requirements">
+                            <span>Что нужно знать туристам для участия в вашем туре?<br>
+                                Например: наличие теплой одежды или непромокаемых ботинок</span>
+                            <textarea name="tour-requirements" placeholder="Lorem ipsum dolor sit amet">Sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.
+ ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tour-tab step-3-2">
+                <div class="tab-header">
+                    1. Примечание
+                </div>
+                <div class="tab-content">
+                    <div class="tour-tab-row">
+                        <div class="tour-requirements">
+                            <span>Комментарий автора<br>
+                                &nbsp;</span>
+                            <textarea name="tour-requirements" placeholder="Lorem ipsum dolor sit amet">Sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.
+ ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tour-tab step-4">
+                <div class="tab-header">
+                    1. Описание вашего тура
+                </div>
+                <div class="tab-content">
+                    <div class="tour-tab-row">
+                        <div class="tour-description">
+                        <span>День 1: Расскажите гостям что будет в этот день тура<br>
+                            &nbsp;</span>
+                        <textarea name="tour-requirements" placeholder="Lorem ipsum dolor sit amet">Sectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque.
+ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        </textarea>
+                        </div>
+                    </div>
+                    <div class="add-more-description">
+                        <span class="font-awesome"></span>  Добавить описание к «День 2»
+                    </div>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="next">Далее&nbsp;&nbsp;&nbsp;<span></span></button>
+                </div>
+            </div>
+            <div class="tour-tab step-4-1">
+                <div class="tab-header">
+                    2. Презентация тура
+                </div>
+                <div class="tab-content">
+                    <div class="tour-tab-row">
+                        <div class="group">
+                            <span class="wrap-left">Загрузите фото- и видеоматериалы, которые относятся к вашему туру</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <label><img src="assets/images/upload-image-placeholder.png"><input type="file" class="hidden" style="display: none;"></label>
+                            </li>
+                            <li><img src="assets/images/upload-image-placeholder.png"></li>
+                            <li><img src="assets/images/upload-image-placeholder.png"></li>
+                        </ul>
+                        <div class="group">
+                            <span class="wrap-left" style="cursor: pointer;"><i></i>&nbsp;&nbsp;&nbsp;Загрузить больше фотографий</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tour-tab step-6">
+                <div class="tab-header">1. Поздравляем, вы закончили оформление тура!</div>
+                <div class="tab-content">
+                    <span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia</span>
+                </div>
+                <div class="tab-control">
+                    <button data-type="back"><span></span>&nbsp;&nbsp;&nbsp;Назад</button> <button data-type="finish">Завершить и отправить заявку</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <div class="grid content5">
+        <div class="clear group">
+            <form method="post" action="#">
+                <label>
+                    <input type="search" name="name" placeholder="Поиск">
+                </label>
+            </form>
+
+            <ul class="share">
+                <li class="facebook"><a class="social " href="#"></a></li>
+                <li class="instagram"><a class="social " href="#"></a></li>
+                <li class="vk"><a class="social " href="#"></a></li>
+            </ul>
+        </div>
+        <hr color="#242424">
+
+        <div class="about">
+            <div class="service">
+                <h3>УСЛУГИ</h3>
+
+                <p>Rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum. </p>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+            </div>
+
+            <ul class="pingo">
+                <li><a href="#"><h3>Pingo!</h3></a></li>
+                <li><a href="#">Туры</a></li>
+                <li><a href="#">Направления</a></li>
+                <li><a href="#">Размещение</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <ul class="contacts">
+                <li><h3>контакты</h3></li>
+                <li>+996 550 055 577</li>
+                <li>info@pingo.kg</li>
+                <li>Кыргызстан, Бишкек, ул. Горького 58,<br>
+                    (Пересекает ул. Матросова)
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <div class="grid footer group">
+            <p>© 2016 pingo!</p>
+            <a href="#">Разработка проекта <img src="assets/images/sunrise.png" alt="sunrise"></a>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
+<!--<script  type="text/javascript" src="assets/js/jquery-ui-1.7.custom.min.js"></script>-->
+<!--<script  type="text/javascript" src="assets/js/selectize.js"></script>-->
+<!--<script src="assets/js/script.js"></script>-->
+
+<script type="text/javascript" >
+    $(document).on('click', function() {
+        $('.input-number-up-arrow').each(function(i, obj) {
+            $(obj).unbind('click').bind('click', function(event){
+                var input = $('input', $(this).parent().parent());
+                var value = parseInt($(input).val());
+                value++;
+                $(input).val(value);
+            });
+        });
+
+        $('.input-number-down-arrow').each(function(i, obj) {
+            $(obj).unbind('click').bind('click', function(event) {
+                var input = $('input', $(this).parent().parent());
+                var value = parseInt($(input).val());
+                if(value > 1) value--;
+                $(input).val(value);
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
