@@ -47,7 +47,7 @@ $('.slct').click(function () {
 $('.flat_slider').slick({
     cssEase: 'ease-in',
     //dots: true,
-    initialSlide: 5,
+    // initialSlide: 5,
     arrow: false,
     asNavFor: '.flat_slider2'
     //autoplay: true,

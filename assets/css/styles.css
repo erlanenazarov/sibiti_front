@@ -217,6 +217,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 0;
+    background: #f2f2f2;
 }
 
 .grid {
@@ -3907,3 +3908,324 @@ span.wrap-right {
 .step-4-1 ul li:nth-child(3n) {
     margin-right: 0;
 }
+
+/* ===============================================================  New One Tour Page ===================================================*/
+
+.page-title {
+    border-top: 1px solid rgba(0,0,0,0);
+
+}
+
+.tours-title {
+    text-align: center;
+    margin-top: 38px;
+}
+
+.tours-title span {
+    font-family: LatoLight, sans-serif;
+    font-size: 11px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5px;
+    background: #000000;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.current-tour-title {
+    font-family: LatoBlack, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-content {
+    margin-top: 50px;
+}
+
+.tour-detail {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border-top: 1px solid rgba(0,0,0,0);
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.detail-title {
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    font-family: LatoSemibold, sans-serif;
+    font-size: 16px;
+    color: #e11633;
+    padding-left: 40px;
+    text-transform: uppercase;
+    margin-top: 32px;
+}
+
+.detail-wrap {
+    margin-top: 47px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 40px;
+    font-family: LatoRegular, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.detail-wrap .wrap-title {
+    font-family: LatoSemibold, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.detail-wrap span {
+    font-family: LatoSemibold, sans-serif;
+    font-size: 16px;
+    color: #7f7f7f;
+    text-transform: lowercase;
+}
+
+.detail-wrap ul {
+    padding-left: 0;
+    margin-top: 25px;
+}
+
+.detail-wrap ul li {
+    list-style-type: none;
+    display: block;
+    font-family: LatoRegular, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.detail-wrap .include-module {
+    margin-top: 25px;
+}
+
+.detail-wrap .include-module span {
+    font-family: LatoRegular, sans-serif;
+    font-size: 16px;
+    color: #e11633;
+}
+
+.detail-wrap .include-module > ul {
+    padding-left: 0;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.detail-wrap .include-module > ul > li {
+    font-family: LatoRegular, sans-serif;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    list-style-type: disc;
+}
+
+.detail-wrap .include-module > ul > li::before {
+    content: '•';
+    margin-right: 5px;
+}
+
+.tour-day-description {
+    height: auto;
+    border-top: 1px solid transparent;
+    margin-top: 85px;
+    display: block;
+}
+
+.tour-day-description .item {
+    margin-bottom: 32px;
+}
+
+.tour-day-description .item .item-title {
+    font-family: LatoRegular, sans-serif;
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.tour-day-description .item .item-title span {
+    color: #e11633;
+    margin-right: 5px;
+}
+
+.tour-day-description .item .item-content {
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.page-content .new-tour-description {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 594px;
+}
+
+.page-content .gallery {
+    float: none;
+    display: block;
+    width: 576px;
+}
+
+.new-tour-details {
+    display: inline-block;
+    vertical-align: top;
+    width: 390px;
+    position: relative;
+    margin-left: 119px;
+}
+
+.book-details {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.book-details a {
+    /*display: block;*/
+    /*margin: 35px auto 0 auto;*/
+    color: #fff;
+    font-family: "LatoRegular", sans-serif;
+    font-size: 16px;
+    padding: 15px 10px;
+    background: #d93265;
+    border: 1px solid #d93265;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.book-details a:hover {
+    background: transparent;
+    color: #d93265;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.guest-reviews {
+    text-align: center;
+    font-family: LatoBold, sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.guest-reviews span {
+    color: #5f5f5f;
+    margin-left: 3px;
+}
+
+.guest-reviews .line {
+    width: 146px;
+}
+
+.new-tour-details .reviews {
+    width: 100%;
+    margin-top: 32px;
+    position: relative;
+    box-sizing: border-box;
+    border-top: 1px solid transparent;
+}
+
+.new-tour-details .reviews .item {
+    background: #FFFFFF;
+    padding: 42px;
+    margin-bottom: 20px;
+}
+
+.new-tour-details .reviews .item .guest-info {
+    margin-bottom: 60px;
+}
+
+.new-tour-details .reviews .item .guest-info .guest-avatar {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 8px;
+}
+
+.new-tour-details .reviews .item .guest-info .guest-avatar img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.new-tour-details .reviews .item .guest-info .guest-name {
+    display: inline-block;
+    vertical-align: top;
+    font-family: LatoBold, sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+.new-tour-details .reviews .item .guest-info .guest-name span {
+    font-family: LatoRegular, sans-serif;
+    font-size: 12px;
+    color: #878787;
+    margin-top: 15px;
+}
+
+.new-tour-details .reviews .item .guest-text {
+    font-family: LatoRegular, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    text-align: justify;
+}
+
+.book-details a.more-reviews {
+    border: 1px solid #000000;
+    background: transparent;
+    color: #000000;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.book-details a.more-reviews:hover {
+    background: #000000;
+    color: #FFFFFF;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+/* ===============================================================  End One Tour Page ===================================================*/
